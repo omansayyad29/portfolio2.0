@@ -1,16 +1,15 @@
 "use client";
 
-import React from "react";
+import Image from "next/image";
 import { motion } from "framer-motion";
 
 const About = () => {
   return (
     <section
       id="about"
-      className="bg-gray-100 dark:bg-gray-950 px-4 sm:px-6 "
+      className="bg-gray-100 dark:bg-gray-950 px-4 sm:px-6"
     >
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10  max-w-7xl mx-auto border-t border-neutral-800 py-20 items-center justify-center">
-        {/* About Text */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-7xl mx-auto border-t border-neutral-800 py-20 items-center justify-center">
         <div className="text-center md:text-left">
           <motion.h2
             className="text-4xl sm:text-5xl font-bold text-gray-900 dark:text-white mb-6"
@@ -27,7 +26,7 @@ const About = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
           >
-            I'm Oman Sayyad, a Full Stack Developer (MEAN + MERN) with a strong
+            I&apos;m Oman Sayyad, a Full Stack Developer (MEAN + MERN) with a strong
             passion for creating modern and scalable applications.
           </motion.p>
 
@@ -64,17 +63,18 @@ const About = () => {
           </motion.p>
         </div>
 
-        {/* Animated Image */}
         <motion.div
           className="flex justify-center md:justify-end"
           initial={{ opacity: 0, scale: 0.8 }}
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
-          <img
-            src="/Oman_Photo.jpg" // Replace with your image path
+          <Image
+            src="/Oman_Photo.jpg"
             alt="Oman Sayyad"
-            className="w-64 sm:w-72 md:w-80 object-cover rounded-3xl shadow-lg max-h-[500px]"
+            width={320}
+            height={400}
+            className="rounded-3xl shadow-lg max-h-[500px] object-cover"
           />
         </motion.div>
       </div>

@@ -2,7 +2,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { SiJavascript, SiPython, SiCplusplus, SiC, SiGo, SiPhp, SiTypescript, SiRust } from "react-icons/si";
+import { SiJavascript, SiPython,SiPhp, SiTypescript } from "react-icons/si";
 import { DiJava } from "react-icons/di";
 
 const ProgrammingLanguages = () => {

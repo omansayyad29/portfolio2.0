@@ -2,12 +2,10 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { TbBrandFirebase, TbBrandNextjs } from "react-icons/tb";
+import { TbBrandFirebase, } from "react-icons/tb";
 import { RiReactjsLine } from "react-icons/ri";
-import { SiExpress, SiMongodb, SiStreamlit } from "react-icons/si";
+import { SiExpress, SiMongodb } from "react-icons/si";
 import { FaNodeJs } from "react-icons/fa";
-import { BiLogoPostgresql } from "react-icons/bi";
-import { DiRedis } from "react-icons/di";
 import { IoLogoAngular } from "react-icons/io";
 
 const Home = () => {
@@ -50,7 +48,7 @@ const Home = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
           >
-            Hello, I'm Oman Sayyad
+            Hello, I&apos;m Oman Sayyad
           </motion.h1>
           <motion.h2
             className="text-xl sm:text-2xl font-semibold text-gray-700 dark:text-gray-300 mb-4"
@@ -67,7 +65,7 @@ const Home = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.5, ease: "easeOut" }}
           >
-            I'm a Full Stack Developer passionate about building modern,
+            I&apos;m a Full Stack Developer passionate about building modern,
             scalable web applications.
           </motion.p>
         </div>
