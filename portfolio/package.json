@@ -4,9 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
-    "build": "next build",
+    
     "start": "next start",
-    "lint": "next lint"
+     "lint": "eslint . --ext .ts,.tsx",
+  "build": "next build"
   },
   "dependencies": {
     "@radix-ui/react-dropdown-menu": "^2.1.14",

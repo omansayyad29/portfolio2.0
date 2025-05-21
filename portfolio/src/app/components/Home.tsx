@@ -2,11 +2,11 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { TbBrandFirebase, } from "react-icons/tb";
+import { TbBrandFirebase } from "react-icons/tb";
 import { RiReactjsLine } from "react-icons/ri";
 import { SiExpress, SiMongodb } from "react-icons/si";
 import { FaNodeJs } from "react-icons/fa";
-import { IoLogoAngular } from "react-icons/io";
+import { IoLogoAngular } from "react-icons/io5";
 
 const Home = () => {
   const iconVariants = (duration: number) => ({
@@ -14,13 +14,22 @@ const Home = () => {
     animate: {
       y: [10, -10],
       transition: {
-        duration: duration,
+        duration,
         ease: "linear",
         repeat: Infinity,
-        repeatType: "reverse" as "reverse",
+        repeatType: "reverse" as const,
       },
     },
   });
+
+  const techStack = [
+    { Icon: RiReactjsLine, label: "React", color: "text-cyan-500" },
+    { Icon: IoLogoAngular, label: "Angular", color: "text-red-500" },
+    { Icon: FaNodeJs, label: "Node.js", color: "text-green-500" },
+    { Icon: SiExpress, label: "Express", color: "text-gray-500" },
+    { Icon: SiMongodb, label: "MongoDB", color: "text-green-500" },
+    { Icon: TbBrandFirebase, label: "Firebase", color: "text-orange-500" },
+  ];
 
   return (
     <section
@@ -58,7 +67,6 @@ const Home = () => {
           >
             Full Stack Developer (MEAN + MERN)
           </motion.h2>
-
           <motion.p
             className="text-base sm:text-lg text-gray-700 dark:text-gray-300"
             initial={{ opacity: 0, y: 20 }}
@@ -70,12 +78,12 @@ const Home = () => {
           </motion.p>
         </div>
 
-        {/* Technologies */}
+        {/* Technologies Section */}
         <div className="md:col-span-2 border-t border-neutral-800 pt-16">
           <motion.h2
             whileInView={{ opacity: 1, y: 0 }}
             initial={{ opacity: 0, y: -100 }}
-            transition={{ duration: 1.5 }}
+            transition={{ duration: 1.2 }}
             className="text-center text-3xl sm:text-4xl font-bold mb-10 text-gray-900 dark:text-white"
           >
             Technologies
@@ -84,25 +92,18 @@ const Home = () => {
           <motion.div
             whileInView={{ opacity: 1, x: 0 }}
             initial={{ opacity: 0, x: -100 }}
-            transition={{ duration: 1.5 }}
+            transition={{ duration: 1.2 }}
             className="flex flex-wrap items-center justify-center gap-6"
           >
-            {[
-              { Icon: RiReactjsLine, label: "React", color: "text-cyan-500" },
-              { Icon: IoLogoAngular, label: "Angular", color: "text-red-500" },
-              { Icon: FaNodeJs, label: "Node.js", color: "text-green-500" },
-              { Icon: SiExpress, label: "Express", color: "text-gery-500" },
-              { Icon: SiMongodb, label: "MongoDB", color: "text-green-500" },
-              { Icon: TbBrandFirebase, label: "Firebase", color: "text-orange-500" },
-            ].map(({ Icon, color }, index) => (
+            {techStack.map(({ Icon, label, color }, index) => (
               <motion.div
-                key={index}
-                variants={iconVariants(2 + index * 0.5)}
+                key={label}
+                variants={iconVariants(2 + index * 0.4)}
                 initial="initial"
                 animate="animate"
                 className="rounded-2xl border-4 border-neutral-800 p-4"
               >
-                <Icon className={`text-6xl sm:text-7xl ${color}`} />
+                <Icon className={`text-6xl sm:text-7xl ${color}`} title={label} />
               </motion.div>
             ))}
           </motion.div>
