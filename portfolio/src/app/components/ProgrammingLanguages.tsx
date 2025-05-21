@@ -14,7 +14,7 @@ const ProgrammingLanguages = () => {
         duration: duration,
         ease: "linear",
         repeat: Infinity,
-        repeatType: "reverse",
+        repeatType: "reverse" as "reverse",
       },
     },
   });

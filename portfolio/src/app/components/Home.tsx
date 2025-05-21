@@ -17,7 +17,7 @@ const Home = () => {
         duration: duration,
         ease: "linear",
         repeat: Infinity,
-        repeatType: "reverse",
+        repeatType: "reverse" as "reverse",
       },
     },
   });
