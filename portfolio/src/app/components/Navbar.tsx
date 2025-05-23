@@ -29,6 +29,7 @@ const Navbar = () => {
             <a href="#about" className="hover:text-blue-500">About</a>
             <a href="#projects" className="hover:text-blue-500">Projects</a>
             <a href="#contact" className="hover:text-blue-500">Contact</a>
+
           </div>
 
           {/* Actions */}
@@ -38,7 +39,7 @@ const Navbar = () => {
               Resume
             </Button>
            </a>
-            <Button className="bg-gray-700" onClick={toggleTheme}>
+            <Button className="hidden  md:inline-block bg-gray-700" onClick={toggleTheme}>
               {theme === 'light' ? <Moon className="w-5 h-5" /> : <Sun className="w-5 h-5" />}
             </Button>
             {/* Mobile Menu Toggle */}
@@ -59,6 +60,8 @@ const Navbar = () => {
             <a href="#about" className="block hover:text-blue-500" onClick={toggleMobileMenu}>About</a>
             <a href="#projects" className="block hover:text-blue-500" onClick={toggleMobileMenu}>Projects</a>
             <a href="#contact" className="block hover:text-blue-500" onClick={toggleMobileMenu}>Contact</a>
+            <a href="/Oman_Sayyad_Resume.pdf" download className="block hover:text-blue-500" onClick={toggleMobileMenu}>Resume</a>
+
              <a href="/Oman_Sayyad_Resume.pdf" download onClick={toggleMobileMenu}>
              <Button className="bg-green-500 hover:bg-green-600  text-white ">
               Resume
