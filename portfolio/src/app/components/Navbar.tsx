@@ -39,7 +39,7 @@ const Navbar = () => {
               Resume
             </Button>
            </a>
-            <Button className="hidden  md:inline-block bg-gray-700" onClick={toggleTheme}>
+            <Button className="  md:inline-block bg-gray-700" onClick={toggleTheme}>
               {theme === 'light' ? <Moon className="w-5 h-5" /> : <Sun className="w-5 h-5" />}
             </Button>
             {/* Mobile Menu Toggle */}

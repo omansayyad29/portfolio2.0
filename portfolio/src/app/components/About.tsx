@@ -57,8 +57,8 @@ const About = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.5, ease: "easeOut" }}
           >
-            I am currently pursuing my Master of Computer Applications (MCA)
-            from MES IMCC College, Pune, further deepening my understanding of
+            I pursued my Master of Computer Applications (MCA)
+            from MES IMCC College with 8.33 (CGPA) , Pune, further deepening my understanding of
             software development and system design.
           </motion.p>
         </div>

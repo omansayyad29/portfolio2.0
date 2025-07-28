@@ -4,24 +4,28 @@ import React from "react";
 import { motion } from "framer-motion";
 import { FaStore, FaComments, FaBriefcase, FaUsers, FaBuilding, FaBusAlt } from "react-icons/fa";
 
+
 const projects = [
   {
     title: "Ecommerce App",
     type: "Personal",
     icon: FaStore,
     stack: "MERN",
+    link:"https://bp-ashen.vercel.app/"
   },
   {
     title: "Chat App",
     type: "Personal",
     icon: FaComments,
     stack: "MERN",
+    link:"https://chat-app-virid-nine-44.vercel.app/"
   },
   {
-    title: "Job Board",
+    title: "ZENO(SAAS)",
     type: "Personal",
     icon: FaBriefcase,
     stack: "MERN",
+    link:"https://zenoai-theta.vercel.app/"
   },
   {
     title: "Social Media App",
@@ -84,6 +88,7 @@ const Projects = () => {
                 return (
                   <motion.div
                     key={project.title}
+                    onClick={() => project.link && window.open(project.link, "_blank")}
                     variants={cardVariants(index * 0.2)}
                     initial="initial"
                     whileInView="animate"
