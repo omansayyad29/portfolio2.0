@@ -45,7 +45,7 @@ const projects = [
     title: "NMMC Gov Portal",
     type: "Company",
     icon: FaBuilding,
-    stack: "React + Java",
+    stack: "Angular + Java",
     link:"https://uatapp.nmmconline.in/"
   },
   {
