@@ -4,7 +4,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { TbBrandFirebase } from "react-icons/tb";
 import { RiReactjsLine } from "react-icons/ri";
-import { SiExpress, SiMongodb } from "react-icons/si";
+import { SiExpress, SiMongodb, SiPostgresql } from "react-icons/si";
 import { FaNodeJs } from "react-icons/fa";
 import { IoLogoAngular } from "react-icons/io5";
 
@@ -29,6 +29,7 @@ const Home = () => {
     { Icon: SiExpress, label: "Express", color: "text-gray-500" },
     { Icon: SiMongodb, label: "MongoDB", color: "text-green-500" },
     { Icon: TbBrandFirebase, label: "Firebase", color: "text-orange-500" },
+    { Icon: SiPostgresql, label: "Postgresql", color: "text-blue-500" }
   ];
 
   return (

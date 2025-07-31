@@ -28,22 +28,32 @@ const projects = [
     link:"https://zenoai-theta.vercel.app/"
   },
   {
-    title: "Social Media App",
+    title: "Social Media App (coming soon)",
     type: "Personal",
     icon: FaUsers,
     stack: "MERN",
+     link:"https://zenoai-theta.vercel.app/"
   },
   {
     title: "PCMC Gov Portal",
     type: "Company",
     icon: FaBuilding,
+    link:"https://noncoredev.pcmcindia.gov.in/login",
     stack: "React + Java",
+  },
+   {
+    title: "NMMC Gov Portal",
+    type: "Company",
+    icon: FaBuilding,
+    stack: "React + Java",
+    link:"https://uatapp.nmmconline.in/"
   },
   {
     title: "Vector UZ Transport App",
     type: "Company",
     icon: FaBusAlt,
     stack: "Angular + FastAPI",
+    
   },
 ];
 
@@ -74,12 +84,15 @@ const Projects = () => {
           className="text-3xl sm:text-4xl font-bold text-center mb-12 text-gray-900 dark:text-white"
         >
           Projects
+           
         </motion.h2>
 
         <div className="mb-14">
-          <h3 className="text-center text-2xl font-semibold text-gray-800 dark:text-gray-200 mb-6">
+         
+          <h3 className="text-center text-2xl font-semibold text-gray-800 dark:text-gray-200 ">
             Personal Projects
           </h3>
+          <h4 className="text-center mb-6">Click to see the projects.</h4>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {projects
               .filter((p) => p.type === "Personal")
