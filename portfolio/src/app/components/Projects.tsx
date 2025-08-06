@@ -6,13 +6,7 @@ import { FaStore, FaComments, FaBriefcase, FaUsers, FaBuilding, FaBusAlt } from 
 
 
 const projects = [
-  {
-    title: "Ecommerce App",
-    type: "Personal",
-    icon: FaStore,
-    stack: "MERN",
-    link:"https://bp-ashen.vercel.app/"
-  },
+  
   {
     title: "Chat App",
     type: "Personal",
