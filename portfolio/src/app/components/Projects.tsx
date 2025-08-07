@@ -2,7 +2,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { FaStore, FaComments, FaBriefcase, FaUsers, FaBuilding, FaBusAlt } from "react-icons/fa";
+import { FaComments, FaBriefcase, FaUsers, FaBuilding, FaBusAlt } from "react-icons/fa";
 
 
 const projects = [
